@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Fira Code", monospace;
+  font-family: "M PLUS 1", sans-serif;
+  color: #171a20;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style-type: none;
+}
+
+.header {
+  /* display: grid;
+  grid-template-columns: auto 1fr auto; */
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 14px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+.logo {
+  height: 12px;
+  width: 100px;
+  color: inherit;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop {
+    display: initial;
+  }
+}
+
+section {
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
